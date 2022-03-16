@@ -1,6 +1,7 @@
 import React from 'react'
 import styles from '../styles/Home.module.css'
 import Link from 'next/link'
+import Router from 'next/router'
 
 export default function Header() {
   return (
@@ -15,9 +16,9 @@ export default function Header() {
         <div>
             
            <ul className={styles.li}>
-               <li> <Link href="/">Über uns</Link> </li>
-               <li> <Link href="/leistungen">Leistungen</Link> </li>
-               <li> <Link href="/jobs">Jobs</Link> </li>
+               <li style={{textDecoration:"underline" }}> <Link href="/">Über uns</Link> </li>
+               <li style={{textDecoration:"underline"}}> <Link href="/leistungen">Leistungen</Link> </li>
+               <li style={{textDecoration:"underline"}}> <Link href="/jobs">Jobs</Link> </li>
            </ul>
 
         </div>
